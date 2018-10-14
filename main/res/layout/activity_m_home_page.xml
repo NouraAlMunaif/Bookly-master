@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".mHomePage"
+    android:background="@drawable/home">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="153dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/logohome" />
+
+
+    <!-- Signin Button -->
+    <Button
+        android:id="@+id/btn_signIn"
+        android:layout_width="328dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="177dp"
+        android:background="@drawable/edit_rouded"
+        android:padding="12dp"
+        android:text="Sign in"
+        android:textColor="@color/grey" />
+
+
+    <!-- Signup Button client -->
+    <Button
+        android:id="@+id/btn_signup"
+        android:layout_width="328dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="107dp"
+        android:background="@drawable/rounded1"
+        android:padding="12dp"
+        android:text="Sign up "
+        android:textColor="@color/Button" />
+
+
+    <!-- Signup Button org-->
+
+    <Button
+        android:id="@+id/btn_signupO"
+        android:layout_width="328dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="34dp"
+        android:background="@drawable/rounded1"
+        android:padding="12dp"
+        android:text="Sign up as an Organization"
+        android:textColor="@color/Button"
+        tools:ignore="DuplicateIds" />
+
+
+
+</RelativeLayout>

@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Bookly</string>
+    <string name="ali">Ali</string>
+    <string name="image">image</string>
+    <string name="nav_open">open</string>
+    <string name="nav_close">close</string>
+</resources>

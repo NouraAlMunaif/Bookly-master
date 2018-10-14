@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/drawerId"
+    tools:openDrawer="start"
+    tools:context=".Mynavigation">
+
+    <FrameLayout
+        android:id="@+id/content_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize"
+            android:background="#FFFFFF"
+            android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+            />
+
+        <LinearLayout
+            android:layout_marginTop="50dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+            <ImageView
+                android:layout_width="800dp"
+                android:layout_height="106dp"
+                android:background="@drawable/bg"
+                android:paddingTop="-58dp"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="1dp"
+
+                tools:layout_editor_absoluteY="59dp" />
+
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+
+    <android.support.design.widget.NavigationView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/nav_view"
+        android:background="#FFFFFF"
+        app:itemTextColor="#26243C"
+        android:layout_gravity="start"
+        app:menu='@menu/nav_menu_layout'
+        app:headerLayout="@layout/nav_header"
+        >
+
+
+    </android.support.design.widget.NavigationView>
+
+
+
+
+    <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".bookService">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:orientation="vertical"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="60dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/userimage"
+                android:layout_width="115dp"
+                android:layout_height="115dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:paddingTop="13dp"
+                android:src="@drawable/pic"
+                app:border_color="@color/colorAccent"
+
+                />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:orientation="vertical"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="100dp">
+
+
+            <TextView
+                android:id="@+id/textlist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="lol"
+                android:paddingBottom="80dp"
+                android:paddingTop="10dp"
+                android:layout_marginLeft="140dp"
+                android:textSize="18dp"
+                android:textColor="@color/white"
+                />
+
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                card_view:cardBackgroundColor="#f4f3f3"
+                card_view:cardCornerRadius="10dp"
+                card_view:cardElevation="2dp"
+                android:paddingBottom="30dp"
+                >
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:orientation="vertical"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp">
+
+
+                    <Spinner
+                        android:id="@+id/spinner1"
+                        android:layout_width="294dp"
+                        android:layout_height="42dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_gravity="center"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        />
+
+                    <EditText
+                        android:id="@+id/SerDate"
+                        android:layout_width="294dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:backgroundTint="#D3D3D3"
+                        android:fontFamily="sans-serif"
+                        android:hint="Chooce Date"
+                        android:textColor="#7c7a7a"
+                        android:textColorHint="#A9A9A9"
+                        android:clickable="true"
+                        android:layout_gravity="center"
+                        />
+
+
+                    <EditText
+                        android:id="@+id/SerTime"
+                        android:layout_width="294dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:backgroundTint="#D3D3D3"
+                        android:fontFamily="sans-serif"
+                        android:hint="Chooce Time"
+                        android:textColor="#7c7a7a"
+                        android:textColorHint="#A9A9A9"
+                        android:clickable="true"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"/>
+
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center">
+
+                        <com.cepheuen.elegantnumberbutton.view.ElegantNumberButton
+                            android:layout_width="280dp"
+                            android:layout_height="80dp"
+                            android:id="@+id/numberRes"
+                            android:gravity="center"
+                            android:layout_marginTop="20dp"
+                            android:paddingBottom="30dp"
+                            android:paddingLeft="20dp"
+                            >
+
+
+
+
+                        </com.cepheuen.elegantnumberbutton.view.ElegantNumberButton>
+
+
+
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+
+            <Button
+                android:id="@+id/buttonBook"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:text="Book >"
+                android:textAllCaps="false"
+                android:textColor="#E8F1F2"
+                android:layout_margin="20dp"
+                android:background="@drawable/edit_rouded"
+                />
+
+
+
+        </LinearLayout>
+
+
+
+
+
+
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.v4.widget.DrawerLayout>

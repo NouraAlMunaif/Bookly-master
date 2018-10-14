@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".signupActivity"
+    android:background="#FFFF">
+
+
+    <EditText
+        android:id="@+id/input_name"
+        android:layout_width="250dp"
+        android:layout_height="41dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="185dp"
+        android:backgroundTint="#D3D3D3"
+        android:fontFamily="sans-serif"
+        android:hint="Name"
+        android:textColor="#7c7a7a"
+        android:textColorHint="#A9A9A9" />
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="38dp"
+
+        android:layout_alignBottom="@+id/phoneNO"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:adjustViewBounds="false"
+        android:src="@drawable/ic_phone_black_24dp"
+        tools:layout_editor_absoluteX="20dp"
+        tools:layout_editor_absoluteY="267dp" />
+
+
+    <EditText
+        android:id="@+id/input_email"
+        android:layout_width="250dp"
+        android:layout_height="41dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="246dp"
+        android:backgroundTint="#D3D3D3"
+        android:fontFamily="sans-serif"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:textColor="#7c7a7a"
+        android:textColorHint="#A9A9A9" />
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_alignTop="@+id/input_email"
+        android:adjustViewBounds="false"
+        android:src="@drawable/ic_email_black_24dp"
+        tools:layout_editor_absoluteX="20dp"
+        tools:layout_editor_absoluteY="267dp" />
+
+
+    <EditText
+        android:id="@+id/phoneNO"
+        android:layout_width="250dp"
+        android:layout_height="41dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="200dp"
+        android:backgroundTint="#D3D3D3"
+        android:fontFamily="sans-serif"
+        android:hint="phone number"
+        android:inputType="phone"
+        android:textColor="#7c7a7a"
+        android:textColorHint="#A9A9A9" />
+
+
+    <EditText
+        android:id="@+id/input_password"
+        android:layout_width="250dp"
+        android:layout_height="41dp"
+        android:layout_centerInParent="true"
+        android:backgroundTint="#D3D3D3"
+        android:fontFamily="sans-serif"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textColor="#7c7a7a"
+        android:textColorHint="#A9A9A9" />
+
+    <TextView
+        android:id="@+id/link_login"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="86dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="Already a member? Login"
+        android:textColor="#6F73FF"
+        android:textSize="16dip"
+        android:layout_alignParentLeft="true" />
+
+    <EditText
+        android:id="@+id/input_password2"
+        android:layout_width="250dp"
+        android:layout_height="41dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="252dp"
+        android:backgroundTint="#D3D3D3"
+        android:fontFamily="sans-serif"
+        android:hint="confirm password"
+        android:inputType="textPassword"
+        android:textColor="#7c7a7a"
+        android:textColorHint="#A9A9A9" />
+
+
+    <!-- Signup Button -->
+
+    <Button
+        android:id="@+id/btn_signup"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="127dp"
+        android:background="@drawable/edit_rouded"
+        android:fontFamily="sans-serif"
+        android:padding="12dp"
+        android:text="Create Account"
+        android:textColor="@color/white" />
+
+
+    <ProgressBar
+        android:id="@+id/progressbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="gone" />
+
+
+    <ImageView
+        android:layout_marginStart="20dp"
+        android:layout_width="30dp"
+        android:layout_height="38dp"
+        android:layout_alignTop="@+id/input_password2"
+        android:adjustViewBounds="false"
+        android:src="@drawable/ic_lock_black_24dp"
+        tools:layout_editor_absoluteX="20dp"
+        tools:layout_editor_absoluteY="267dp"
+        android:layout_marginLeft="20dp" />
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_alignTop="@+id/input_password"
+        android:adjustViewBounds="false"
+        android:src="@drawable/ic_lock_black_24dp"
+        tools:layout_editor_absoluteX="20dp"
+        tools:layout_editor_absoluteY="267dp" />
+
+
+    <ImageView
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="30dp"
+        android:layout_height="38dp"
+        android:layout_alignBottom="@+id/input_name"
+        android:adjustViewBounds="false"
+        android:src="@drawable/ic_person_black_24dp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="267dp" />
+
+    <ImageView
+        android:layout_width="165dp"
+        android:layout_height="123dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="27dp"
+        android:src="@drawable/logohome" />
+
+</RelativeLayout>
